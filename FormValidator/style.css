@@ -1,0 +1,108 @@
+:root {
+    --sc: rgb(84, 231, 84);
+    --ec: rgb(247, 26, 26);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(16, 99, 119);
+    text-shadow: 2px 2px aqua;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px 20px;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px;
+    background-color: rgb(231, 230, 228);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.form-field input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+.form-field.success input {
+    border-color: var(--sc);
+}
+.form-field.error input {
+    border-color: var(--ec);
+}
+.form-field small {
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    color: var(--ec);
+}
+.form-field.error small {
+    visibility: visible;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: rgb(0, 119, 255);
+}
+
+.login {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: chartreuse;
+    width: 50%;
+}
+
+.form-field .view-pass {
+    width: 15px;
+    display: inline-block;
+}
+.checkbox-holder {
+    font-size: 10px;
+    float: right;
+}
+
