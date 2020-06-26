@@ -74,6 +74,7 @@ a {
 }
 
 button {
+    margin-top: 20px;
     color: white;
     cursor: pointer;
     border: 1px solid black;
@@ -97,12 +98,31 @@ button {
     width: 50%;
 }
 
-.form-field .view-pass {
-    width: 15px;
+.checkbox {
+    border: 0.5px solid black;
+    height: 12px;
+    background-color: rgb(250, 250, 249);
+    width: 12px;
     display: inline-block;
 }
+
+.checkbox:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .checkbox-holder {
     font-size: 10px;
     float: right;
+}
+
+.checkbox.clicked {
+    background-color: chartreuse;
+}
+
+@media (max-width: 850px){
+    .container{
+        width: 90%;
+    }
 }
 

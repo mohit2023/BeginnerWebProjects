@@ -52,6 +52,23 @@ function checkPassmatch(input1,input2){
     }
 }
 
+function changeType(evt){
+    const obj = evt.target;
+    obj.classList.toggle('clicked');
+    let str= '#pass' + obj.id[obj.id.length - 1];
+    const formfield = obj.parentElement.parentElement.parentElement;
+    const input = formfield.querySelector(str);
+
+    if(input.type === 'text'){
+        input.type = 'password';
+    }
+    else{
+        input.type = 'text';
+    }
+}
+
+
+
 form.addEventListener('submit', function(evt){
     
     flag = true;
@@ -69,23 +86,5 @@ form.addEventListener('submit', function(evt){
 });
 
 
-function changeType(evt){
-    const obj = evt.path[0];
-    let str= '#pass' + obj.id[obj.id.length - 1];
-    const formfield = obj.parentElement.parentElement.parentElement;
-    const input = formfield.querySelector(str);
-    console.log(input);
-
-    if(input.type === 'text'){
-        input.type = 'password';
-    }
-    else{
-        input.type = 'text';
-    }
-}
-
-
-
-
-vp1.addEventListener('change',changeType);
-vp2.addEventListener('change',changeType);
+vp1.addEventListener('click',changeType);
+vp2.addEventListener('click',changeType);
