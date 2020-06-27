@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    background-color: rgb(42, 36, 58);
+}
+
+h1 {
+    color: white;
+}
+
+.screen {
+    width: 60%;
+    cursor: pointer;
+    background-color: rgb(66, 65, 65);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.control1{
+    width: 60%;
+    background-color: rgb(146, 142, 142);
+    padding: 5px 10px;
+}
+
+.control2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    background-color: rgb(146, 142, 142);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 10px;
+}
+
+.controls .btn {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+.controls .btn:focus {
+    outline: 0;
+}
+
+.controls .timestamp {
+    float: right;
+}
+
+.controls .progress {
+    width: 80%;
+}
+
+.controls .fa-play {
+    color: green;
+}
+.controls .fa-pause {
+    color: honeydew;
+}
+.controls .fa-stop {
+    color: red;
+}
+
+@media (max-width: 800px){
+    .screen,.controls {
+        width: 90%;
+    }
+}

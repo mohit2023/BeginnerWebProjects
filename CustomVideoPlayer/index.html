@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+
+    <video src="video/sintel-short.mp4" class="screen" id="video" poster="img/initial_stamp_etc.png"></video>
+
+    <div class="control1 controls">
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-lg"></i>
+        </button>
+        <button class="btn" id="stop">
+            <i class="fa fa-stop fa-lg"></i>
+        </button>
+        <div class="timestamp">
+            <span id="curtime">00:00</span>
+            <span >/</span>
+            <span id="duration">00:00</span>
+        </div>
+        
+    </div>
+
+    <div class="control2 controls">
+        <button class="btn" id="rwd">
+            <i class="fa fa-fast-backward fa-lg"></i>
+        </button>
+        <input type="range" min="0" max="100" class="progress" value="0" step="0.1">
+        <button class="btn" id="fwd">
+            <i class="fa fa-fast-forward fa-lg"></i>
+        </button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
