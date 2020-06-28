@@ -49,7 +49,8 @@ h1 {
     outline: 0;
 }
 
-.controls .timestamp {
+.controls .timestamp,.controls .mute {
+    margin-left: 10px;
     float: right;
 }
 
@@ -67,7 +68,7 @@ h1 {
     color: red;
 }
 
-@media (max-width: 800px){
+@media (max-width: 750px){
     .screen,.controls {
         width: 90%;
     }
