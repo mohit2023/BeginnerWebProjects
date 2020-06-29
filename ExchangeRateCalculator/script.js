@@ -16,7 +16,7 @@ function calculate(){
                 const value = data.rates[currency_two.value];
                 rate.innerText = `1 ${currency_one.value} = ${value} ${currency_two.value}`;
 
-                amount_two.value = amount_one.value * value.toFixed(2);
+                amount_two.value = (amount_one.value * value).toFixed(2);
             });
 
 }
@@ -24,7 +24,6 @@ function calculate(){
 currency_one.addEventListener('change',calculate);
 currency_two.addEventListener('change',calculate);
 amount_one.addEventListener('input',calculate);
-amount_two.addEventListener('input',calculate);
 
 swap.addEventListener('click',function(){
     const temp = currency_one.value;
