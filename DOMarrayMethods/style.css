@@ -104,7 +104,6 @@ p {
     }
     .btn {
         width: 45%;
-        display: inline;
         margin-right: 10px; 
         font-size: 12px;
         padding: 5px;

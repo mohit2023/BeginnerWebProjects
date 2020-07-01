@@ -65,12 +65,20 @@ function sortByRichest(){
 }
 
 function calculateWealth(){
+
+    const check = document.getElementById('wealth');
+    console.log(check);
+    if(check != null){
+        console.log(1);
+        return;
+    }
+
     const wealth = data.reduce((acc,item) => (acc+=item.money),0);
 
     const total = document.createElement('h3');
+    total.id = 'wealth';
     total.innerHTML = `Total Wealth:<strong>$${formatMoney(wealth)}</strong>`;
 
-    updateDOM();
     main.appendChild(total);
 }
 
