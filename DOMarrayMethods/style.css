@@ -46,7 +46,7 @@ aside {
     outline: 0;
 }
 
-#filter:focus {
+#filter.active {
     outline: 1px ridge blue;
 }
 
