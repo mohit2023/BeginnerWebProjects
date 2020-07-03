@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Page</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="user">
+        </div>
+        <ul>
+            <li>
+                <a href="blank.html" target="_blank">Home</a>
+            </li>
+            <li>
+                <a href="blank.html" target="_blank">Portfolio</a>
+            </li>
+            <li>
+                <a href="blank.html" target="_blank">Blog</a>
+            </li>
+            <li>
+                <a href="blank.html" target="_blank">Contact-me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <button class="toggle" id="show-nav">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>My Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, praesentium.</p>
+        <button id="open">Sign-up</button>
+    </header>
+
+    <div class="container">
+        <br>
+        <h2>What is the purpose of this site?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam quod eius aut fugit expedita quis obcaecati saepe alias veritatis accusantium commodi omnis autem soluta, officia, culpa, ut quisquam quas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore facere delectus fugit quos deleniti laborum magnam saepe eius provident!</p>
+        <br>
+
+        <h2>Tell me more</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet maxime natus alias excepturi aut nisi nihil dolor molestias aperiam nobis quibusdam ab modi est et doloribus reprehenderit, nemo rem voluptatibus laudantium dignissimos distinctio soluta perferendis ipsum temporibus. Ut, praesentium facilis?</p>
+        <br>
+
+        <h2>Benefits</h2>
+        <ul>
+            <li>B1</li>
+            <li>B2</li>
+            <li>B3</li>
+        </ul>
+        <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aspernatur molestiae eaque minus magnam eligendi perferendis ipsum, mollitia consequuntur! Ipsam cupiditate nulla provident ullam officiis enim vitae eaque dolor facere omnis beatae, itaque repellat aut nihil, dolorum alias nemo dolores. Accusamus voluptatum laborum nemo nihil, vitae iusto. Pariatur, ipsum vero!</p>
+        <br>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button id="close" class="close-btn">
+                <i class="fa fa-times"></i>
+            </button>
+            <header class="modal-header">
+                <h3>Sign-up</h3>
+            </header>
+            <div class="modal-content">
+                <p>Register with us to get offers, support and more</p>
+                <form action="blank.html" id="form" class="modal-form" method="post">
+                    <div class="form-field">
+                        <label for="username">Username</label>
+                        <div class="form-input">
+                            <input type="text" name="username" id="username" placeholder="Enter username">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <div class="form-input">
+                            <input type="email" name="email" id="email" placeholder="Enter email id">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="password1">Password</label>
+                        <div class="form-input">
+                            <input type="password" name="password" id="password1" placeholder="Enter password">
+                            <i class="fa fa-eye" id="vp1"></i>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="password2">Confirm Password</label>
+                        <div class="form-input">
+                            <input type="password" name="password" id="password2" placeholder="Enter password again">
+                            <i class="fa fa-eye" id="vp2"></i>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                    <hr>
+                    <strong>
+                        <p>Already registered?</p>
+                        <a href="blank.html">Log-In</a>
+                    </strong>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
