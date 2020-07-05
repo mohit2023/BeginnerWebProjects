@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(87, 16, 16);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+button,input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 8px 10px;
+    margin: 0;
+    font-size: 14px;
+}
+
+button:focus,input:focus {
+    outline: 0;
+}
+
+button:active,input:active {
+    transform: scale(0.99);
+}
+
+input {
+    width: 300px;
+}
+
+.search-btn {
+    cursor: pointer;
+    border-left: 0;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.random-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.meal {
+    cursor: pointer;
+    position: relative;
+    height: 180px;
+    width: 180px;
+}
+
+.meal img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    border: 4px solid whitesmoke
+}
+
+.meal .meal-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+}
+
+.meal .meal-info:hover {
+    opacity: 1;
+}
+
+.single-meal {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.single-meal img {
+    width: 350px;
+    border: 4px solid whitesmoke;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.single-meal .single-meal-info {
+    padding: 10px;
+    margin: 20px;
+    border: 2px burlywood dashed;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.single-meal p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5; 
+}
+
+.single-meal ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.single-meal ul li {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    background-color: cyan;
+    color: darkblue;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid blue
+}
+
+@media (max-width: 800px) {
+    .meals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .meals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meal {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    input {
+        width: 100%;
+    }
+
+    .meals {
+        grid-template-columns: 1fr;
+    }
+
+    .meal {
+        width: 250px;
+        height: 250px;
+    }
+
+    .single-meal img {
+        width: 100%;
+        margin: 0;
+    }
+}
