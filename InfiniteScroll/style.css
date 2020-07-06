@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aquamarine;
+    padding-bottom: 35px;
+}
+
+.header {
+    position: fixed;
+    height: 120px;
+    overflow: hidden;
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 20;
+    border: 2px solid red;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.header .filter-container {
+    max-width: 750px;
+    width: 80vw;
+}
+
+.header input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid green
+}
+
+.posts-container {
+    margin-top: 150px;
+    max-width: 850px;
+    width: 90vw;
+}
+
+.post {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background-color: rgb(143, 167, 243);
+    border-radius: 4px;
+    border: 1px solid violet;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.post .number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+    border-radius: 50%;
+}
+
+.post-info .post-title {
+    margin: 0;
+    color: yellow;
+}
+
+.post-info .post-body {
+    color: rgb(53, 7, 112);
+    line-height: 1.3;
+    font-size: 16px;
+    margin: 0;
+}
+
+.loader {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+}
+
+.loader.show {
+    opacity: 1;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: rosybrown;
+    margin: 7px;
+    border-radius: 50%;
+    animation: bounce 0.6s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+    animation-delay: 0.15s;
+}
+
+.circle:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    0
+    ,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
