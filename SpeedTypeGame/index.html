@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Speed Typing Game</title>
+</head>
+<body>
+    <button id="settings-btn" class="settings-btn">
+        <i class="fa fa-cog"></i>
+    </button>
+
+    <div class="settings" id="settings">
+        <form class="form-settings">
+            <label for="difficulty">Difficulty</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </form>
+    </div>
+
+    <button class="begin-btn" id="begin-btn">
+        Begin Game
+    </button>
+
+    <div class="game-container">
+
+        <h2>Speed Typing Challenge</h2>
+
+        <div class="container">
+            <div class="time-container">
+                Time Left: <span id="time">10</span> sec
+            </div>
+    
+            <div class="score-container">
+                Score: <span id="score">0</span>
+            </div>
+        </div>
+
+        <p>Type the following:</p>
+        <h1 id="word" class="word"></h1>
+
+        <input type="text" id="text" autocomplete="off" placeholder="type the word here...">
+
+        <div class="end-game" id="end-game"></div>
+
+    </div>
+
+    <script src="script.js"></script>    
+</body>
+</html>
