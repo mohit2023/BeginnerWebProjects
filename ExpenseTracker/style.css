@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+:root {
+    --box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    --green: green;
+    --red: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 10px;
+    padding: 0;
+}
+
+.container {
+    min-width: 340px;
+    max-width: 480px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 5px;
+}
+
+#balance {
+    color: blue;
+}
+
+h1 {
+    margin:0;
+}
+
+.inc-exp-container {
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0 20px 0;
+}
+
+.inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+    border-right: 1px solid #dedede;
+}
+
+.money {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.money.plus {
+    color: var(--green);
+}
+
+.money.minus {
+    color: var(--red);
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+li {
+    box-shadow: var(--box-shadow);
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+li.plus {
+    border-right: 5px solid var(--green);
+}
+
+li.minus {
+    border-right: 5px solid var(--red);
+}
+
+.delete-btn {
+    position: absolute;
+    background-color: brown;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+li:hover .delete-btn {
+    opacity: 1;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+form {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.btn {
+    background-color: cyan;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+}
