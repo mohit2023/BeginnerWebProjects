@@ -7,6 +7,8 @@ Basic front end web development projects just to get your hands on html, css and
 
 [Exchange Rate Calculator](https://mohit2023.github.io/BeginnerWebProjects/ExchangeRateCalculator)
 
+[Expense Tracker](https://mohit2023.github.io/BeginnerWebProjects/ExpenseTracker)
+
 [Form Validator](https://mohit2023.github.io/BeginnerWebProjects/FormValidator)
 
 [HangMan Game](https://mohit2023.github.io/BeginnerWebProjects/HangManGame)
