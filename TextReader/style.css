@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(255, 181, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: tomato;
+    color: white;
+    border: 0;
+}
+
+.btn:hover,select:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus,select:focus {
+    outline: 0;
+}
+
+.text-box {
+    background-color: slategrey;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 30%;
+    transform: translateY(-500px);
+    padding: 20px 20px 10px 10px;
+    color: white;
+    transition: transform 0.6s ease-in-out;
+}
+
+.text-box.show {
+    transform: translateY(0);
+}
+
+#close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box p {
+    font-size: 20px;
+}
+
+.text-box select {
+    width: 60%;
+    margin-left: 10px;
+    background-color: wheat;
+    font-size: 20px;
+}
+
+.text-box textarea {
+    display: block;
+    width: 100%;
+    height: 140px;
+    margin: 10px 0;
+}
+
+#read-text {
+    width: 100%;
+}
+
+main {
+    margin: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+main div {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(250, 77, 19);
+    /*transition: box-shadow 0.2s ease-out;*/
+}
+
+main div.active {
+    box-shadow: 0 0 10px 5px darkgoldenrod;
+}
+
+main div img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main div p {
+    text-align: center;
+    font-size: 20px;
+    padding: 6px 0;
+    margin: 0;
+}
+
+
+@media (max-width: 1100px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .text-box {
+        width: 90%;
+    } 
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
