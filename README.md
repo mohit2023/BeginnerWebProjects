@@ -28,3 +28,5 @@ Basic front end web development projects just to get your hands on html, css and
 [Guess The Number(Speak Recognition)](https://mohit2023.github.io/BeginnerWebProjects/SpeakRecognition)
 
 [Speed Typing Game](https://mohit2023.github.io/BeginnerWebProjects/SpeedTypeGame)
+
+[Text Reader](https://mohit2023.github.io/BeginnerWebProjects/TextReader)
