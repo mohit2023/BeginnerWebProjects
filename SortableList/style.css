@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+.draggable-list {
+    background-color: aliceblue;
+    border: 1px solid brown;
+    list-style-type: none;
+    padding: 0;
+}
+
+.draggable-list li {
+    display: flex;
+}
+
+.draggable-list li.over .draggable {
+    background-color: silver;
+}
+
+.draggable-list li:not(:last-of-type) {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 41px;
+    font-size: 24px;
+    background-color: cornsilk;
+    border-left: 1px solid brown;
+}
+
+.draggable {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.draggable .name {
+    margin: 0 20px 0 10px;
+}
+
+.draggable-list li.right .name {
+    color: green;
+}
+.draggable-list li.wrong .name {
+    color: red;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 16px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: none;
+}
