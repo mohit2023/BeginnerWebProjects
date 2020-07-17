@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden
+}
+
+h1 {
+    position: relative;
+}
+
+h1 .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(120%,0);
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+}
+
+.btn.btn-small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn.btn-ghost {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.cards {
+    perspective: 1000px;
+    height: 240px;
+    width: 340px;
+    max-width: 100%;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    transform: translateX(+50%) rotateY(-10deg);
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.card.active {
+    cursor: pointer;
+    opacity: 1;
+    z-index: 2;
+    transform: translateX(0) rotateY(0);
+}
+
+.card.left {
+    transform: translateX(-50%) rotateY(10deg);
+}
+
+.inner-card {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.inner-card-front,.inner-card-back {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.show-answer .inner-card {
+    transform: rotateX(180deg);
+}
+.card.show-answer .inner-card-back {
+    z-index: 2;
+}
+
+.inner-card-front {
+    z-index: 1;
+}
+
+.inner-card-back {
+    transform: rotateX(180deg);
+}
+
+.inner-card-front::after, .inner-card-back::after {
+    content: '\f2f1  Flip';
+    font-family: 'Font Awesome 5 Free', sans-serif ;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #aaaaaa;
+}
+
+.navigation {
+    display: flex;
+    margin: 20px 0;
+}
+
+.navigation button {
+    border: 0;
+}
+
+.navigation p {
+    margin: 0 30px;
+}
+
+.add-container {
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    background-color: wheat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-container.show {
+    opacity: 1;
+    z-index: 5;
+}
+
+.add-container h1 {
+    margin-bottom: 40px;
+}
+
+.add-container h1 button i {
+    margin-left: 30px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 18px;
+    padding: 6px 0;
+}
+
+.input-field textarea {
+    font-size: 20px;
+    max-width: 100%;
+    width: 340px;
+}
+
+.add-container .add-card {
+    width: 300px;
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+.clear-btn {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+
+.btn:active {
+    background-color: #dedede;
+}
+
+.btn.btn-ghost:active {
+    background-color: transparent;
+}
+
+.btn.btn-ghost:active i {
+    background-color: rgb(248, 194, 94);
+}
+
+@media (max-width: 680px) {
+
+    #show {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,120%);
+    }
+
+    h1 {
+        margin-bottom: 60px;
+    }
+}

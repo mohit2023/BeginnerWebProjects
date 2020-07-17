@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Cards</title>
+</head>
+<body>
+    <h1>Memory Cards
+        <button class="btn btn-small" id="show">
+            <i class="fas fa-plus"></i> Add New Card
+        </button>
+    </h1>
+
+    <div id="cards-container" class="cards"></div>
+
+    <div class="navigation">
+        <button class="btn" id="prev">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <p id="current"></p>
+
+        <button class="btn" id="next">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+
+    <div id="add-container" class="add-container">
+        <h1>Add New Card
+            <button class="btn btn-ghost" id="hide">
+                <i class="fas fa-times"></i>
+            </button>
+        </h1>
+
+        <div class="input-field">
+            <label for="Question">Question</label>
+            <textarea id="Question" placeholder="Enter question..."></textarea>
+        </div>
+
+        <div class="input-field">
+            <label for="Answer">Answer</label>
+            <textarea id="Answer" placeholder="Enter answer..."></textarea>
+        </div>
+
+        <button class="btn add-card" id="add-card">
+            <i class="fas fa-plus"></i>Add Card
+        </button>
+    </div>
+
+    <button id="clear" class="btn clear-btn">
+        <i class="fas fa-trash"></i>Clear Cards
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
