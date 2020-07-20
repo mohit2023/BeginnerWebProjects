@@ -1,34 +1,42 @@
 # BeginnerWebProjects
 Basic front end web development projects just to get your hands on html, css and javascript.
 
-[Custom Video Player](https://mohit2023.github.io/BeginnerWebProjects/CustomVideoPlayer)
+1) [Break The Blocks Game](https://mohit2023.github.io/BeginnerWebProjects/BreakTheBlocksGame)
 
-[DOM Array Methods](https://mohit2023.github.io/BeginnerWebProjects/DOMarrayMethods)
+2) [Custom Video Player](https://mohit2023.github.io/BeginnerWebProjects/CustomVideoPlayer)
 
-[Exchange Rate Calculator](https://mohit2023.github.io/BeginnerWebProjects/ExchangeRateCalculator)
+3) [DOM Array Methods](https://mohit2023.github.io/BeginnerWebProjects/DOMarrayMethods)
 
-[Expense Tracker](https://mohit2023.github.io/BeginnerWebProjects/ExpenseTracker)
+4) [Exchange Rate Calculator](https://mohit2023.github.io/BeginnerWebProjects/ExchangeRateCalculator)
 
-[Form Validator](https://mohit2023.github.io/BeginnerWebProjects/FormValidator)
+5) [Expense Tracker](https://mohit2023.github.io/BeginnerWebProjects/ExpenseTracker)
 
-[HangMan Game](https://mohit2023.github.io/BeginnerWebProjects/HangManGame)
+6) [Form Validator](https://mohit2023.github.io/BeginnerWebProjects/FormValidator)
 
-[Infinite Scroll Blogs](https://mohit2023.github.io/BeginnerWebProjects/InfiniteScroll)
+7) [HangMan Game](https://mohit2023.github.io/BeginnerWebProjects/HangManGame)
 
-[Make Your Own Meal](https://mohit2023.github.io/BeginnerWebProjects/MealFinder)
+8) [Infinite Scroll Blogs](https://mohit2023.github.io/BeginnerWebProjects/InfiniteScroll)
 
-[My Page](https://mohit2023.github.io/BeginnerWebProjects/ModalMenuSlider)
+9) [Make Your Own Meal](https://mohit2023.github.io/BeginnerWebProjects/MealFinder)
 
-[Movie Seat Booking](https://mohit2023.github.io/BeginnerWebProjects/MovieSeatBooking)
+10) [Make Notes Cards](https://mohit2023.github.io/BeginnerWebProjects/MemoryCards)
 
-[Custom Music Player](https://mohit2023.github.io/BeginnerWebProjects/MusicPlayer)
+11) [My Page](https://mohit2023.github.io/BeginnerWebProjects/ModalMenuSlider)
 
-[NewYear Countdown](https://mohit2023.github.io/BeginnerWebProjects/NewYearCountdown)
+12) [Movie Seat Booking](https://mohit2023.github.io/BeginnerWebProjects/MovieSeatBooking)
 
-[Relax Application](https://mohit2023.github.io/BeginnerWebProjects/RelaxApp)
+13) [Custom Music Player](https://mohit2023.github.io/BeginnerWebProjects/MusicPlayer)
 
-[Guess The Number(Speak Recognition)](https://mohit2023.github.io/BeginnerWebProjects/SpeakRecognition)
+14) [NewYear Countdown](https://mohit2023.github.io/BeginnerWebProjects/NewYearCountdown)
 
-[Speed Typing Game](https://mohit2023.github.io/BeginnerWebProjects/SpeedTypeGame)
+15) [Relax Application](https://mohit2023.github.io/BeginnerWebProjects/RelaxApp)
 
-[Text Reader](https://mohit2023.github.io/BeginnerWebProjects/TextReader)
+16) [Search Song Lyrics](https://mohit2023.github.io/BeginnerWebProjects/SearchLyrics)
+
+17) [Check Your General Knowledge](https://mohit2023.github.io/BeginnerWebProjects/SortableList)
+
+18) [Guess The Number(Speak Recognition)](https://mohit2023.github.io/BeginnerWebProjects/SpeakRecognition)
+
+19) [Speed Typing Game](https://mohit2023.github.io/BeginnerWebProjects/SpeedTypeGame)
+
+20) [Text Reader](https://mohit2023.github.io/BeginnerWebProjects/TextReader)
