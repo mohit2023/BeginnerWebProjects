@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BreakBlocks</title>
+</head>
+<body>
+    <h1>Break The Blocks!</h1>
+
+    <button class="btn rules-btn" id="rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+        <h1>How to play:</h1>
+        <p>Use right and left keys to move the paddle to bounce the ball and break the blocks</p>
+        <p>If you miss the ball, your score and the blocks will reset.</p>
+        <button id="close" class="btn">Close</button>
+    </div>
+    
+
+    <canvas id="canvas"></canvas>
+
+    <div class="button-container">
+        <button id="left">Move Left</button>
+        <button id="right">Move right</button>
+    </div>
+
+    <div class="score">
+        <span>Highest Score: <strong id="highestscore">0</strong></span>
+        <span>Score: <strong id="score">0</strong></span>
+    </div>
+    
+    <div id="new-highest-score" class="overlay">
+        <div class="container">
+            <h1>New High Score!!</h1>
+            <p>Blocks Destroyed: <span id="high-score-value">0</span> </p>
+        </div>
+    </div>
+
+    <div id="won-game" class="overlay">
+        <div class="container">
+            <h1>🎉🎉 Congratulation You Won 🎉🎉</h1>
+            <p>You destroyed all blocks</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

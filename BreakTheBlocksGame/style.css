@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0193f5;
+    color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+canvas {
+    background-color: white;
+    border-radius: 5px;
+    width: 60%;
+    height: 70%;
+    position: relative;
+}
+
+.score {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.3em;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.btn:hover {
+    background-color: #222222;
+}
+
+.rules-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.rules {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 360px;
+    background-color: #333333;
+    padding: 30px;
+    min-height: 100vh;
+    line-height: 1.5;
+    transition: transform 1s ease-in-out;
+}
+
+.rules p {
+    font-size: 1.2em;
+}
+
+.rules .btn {
+    margin-top: 50px;
+}
+
+.rules.show {
+    transform: translateX(0);
+}
+
+.button-container {
+    padding: 10px 20px 0 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 15px 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    align-items: center;;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay.show {
+    display: flex;
+}
+
+.container {
+    background-color: greenyellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+.container h1 {
+    color: red;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+.container span {
+    font-size: 2em;
+    color: blueviolet;
+}
+
+.container p {
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 700px) {
+    canvas {
+        width: 90%;
+    }
+    .score {
+        width: 90%;
+    }
+    .button-container {
+        width: 90%;
+    }
+}
