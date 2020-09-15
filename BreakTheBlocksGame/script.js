@@ -46,7 +46,7 @@ const brickLayout = {
     gy : 5,
     offsetx : 20,
     offsety : 10,
-    color : '#008000',
+    color: '#10bb3b',
     visible : true
 }
 

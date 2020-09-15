@@ -73,12 +73,16 @@ span {
     background-color: #333333;
     padding: 30px;
     min-height: 100vh;
-    line-height: 1.5;
+    line-height: 1.12;
     transition: transform 1s ease-in-out;
 }
 
+.rules h2 {
+    color: rgb(240, 203, 135);
+}
+
 .rules p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .rules .btn {
