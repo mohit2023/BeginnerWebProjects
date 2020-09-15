@@ -101,11 +101,38 @@ ul li button {
     justify-content: center;
 }
 
-.nav button {
+.nav button, .back {
     background-color: crimson;
     color: white;
     margin: 20px;
     border: 0;
     padding: 8px 14px;
     border-radius: 14px;
+}
+
+.lyrics {
+    max-width: 100%;
+    width: 500px;
+    padding: 10px 10px 20px 10px;
+    display: none;
+}
+
+.back {
+    display: none;
+}
+
+.back.show {
+    display: block;
+}
+
+.lyrics.show {
+    display: block;
+} 
+
+#result.hide {
+    display: none;
+}
+
+.nav.hide {
+    display: none;
 }
