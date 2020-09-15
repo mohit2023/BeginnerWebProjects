@@ -106,14 +106,24 @@ function updateProgress(){
 }
 
 function setVideoProgress(evt){
+    let flag=false;
+    if(video.paused){
+        flag=true;
+    }
     video.pause();
-    video.currentTime = (+progress.value * video.duration) / 100;
+    let value= evt.offsetX/progress.clientWidth;
+    let temp = (value * video.duration);
+    video.currentTime=temp;
+
+    if(!flag){
+        video.play();
+    }
 }
 
 
 
 function windBackward(){
-    if(video.currenttime<=3){
+    if(video.currentTime<=3){
         StopVideo();
     }
     else{
@@ -163,7 +173,7 @@ stop.addEventListener('click',StopVideo);
 video.addEventListener('ended',StopVideo);
 
 video.addEventListener('timeupdate',updateProgress);
-progress.addEventListener('change', setVideoProgress);
+progress.addEventListener('click', setVideoProgress);
 
 rwd.addEventListener('click',VideoBackward);
 fwd.addEventListener('click',VideoForward);
