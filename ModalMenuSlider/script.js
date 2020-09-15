@@ -5,7 +5,7 @@ const modal = document.getElementById('modal');
 const navbar = document.getElementById('nav-bar');
 
 toggle.addEventListener('click',() => {
-    document.body.classList.toggle('shift-right');
+    navbar.classList.toggle('shift-right');
 });
 
 open.addEventListener('click', () => {
@@ -17,9 +17,8 @@ close.addEventListener('click',() => {
 });
 
 window.addEventListener('click',e =>{
-    if(document.body.classList.contains('shift-right') && e.target!=toggle && !toggle.contains(e.target) && e.target!=navbar && !navbar.contains(e.target)){
-        console.log(1);
-        document.body.classList.remove('shift-right');
+    if(navbar.classList.contains('shift-right') && e.target!=toggle && !toggle.contains(e.target) && e.target!=navbar && !navbar.contains(e.target)){
+        navbar.classList.remove('shift-right');
     }
     e.target == modal ? modal.classList.remove('show-nav') : false;
 });

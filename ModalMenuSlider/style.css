@@ -17,21 +17,23 @@ body {
     transition: transform 0.3s ease;
 }
 
-body.shift-right {
-    transform: translateX(200px);
+nav.shift-right {
+    transform: translateX(0);
 }
 
 nav {
-    background-color: var(--primary-color);
+    background-color: rgba(240, 104, 13);
     color: white;
     max-width: 100%;
     width: 200px;
-    height: 100%;
+    overflow-x: hidden;
     position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    transform: translateX(-100%);
+    top: 10px;
+    left: 2px;
+    bottom: 10px;
+    z-index: 2;
+    border-radius: 10px;
+    transform: translateX(-105%);
     border-right: 1px solid rgba(122, 120, 120, 0.8);
 }
 
@@ -85,9 +87,13 @@ header h1 {
 }
 
 header .toggle {
-    position: absolute;
-    left: 5px;
-    top: 5px;
+    width: 28px;
+    height: 24px;
+    font-size: 18px;
+    position: fixed;
+    left: 6px;
+    top: 20px;
+    z-index: 5;
     background-color: rgba(125, 115, 235, 0.5);
 }
 
@@ -113,7 +119,7 @@ button,input[type="submit"]:focus {
 }
 
 .container {
-    padding: 10px 15px;
+    padding: 10px 15px 10px 40px;
     max-width: 100%;
     width: 800px;
     margin: 0 auto;
