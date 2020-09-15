@@ -9,55 +9,55 @@ const readText = document.getElementById('read-text');
 
 const data = [
     {
-        image: 'img/hungry.jpg',
+        image: 'lowQualityImage/hungry.jpg',
         text: "I'm Hungry"
     },
     {
-        image: 'img/drink.jpg',
+        image: 'lowQualityImage/drink.jpg',
         text: "I'm Thirsty"
     },
     {
-        image: 'img/bored.jpg',
+        image: 'lowQualityImage/bored.jpg',
         text: "I'm Bored"
     },
     {
-        image: 'img/tired.jpg',
+        image: 'lowQualityImage/tired.jpg',
         text: "I'm Tired"
     },
     {
-        image: 'img/hurt.jpg',
+        image: 'lowQualityImage/hurt.jpg',
         text: "I'm Hurt"
     },
     {
-        image: 'img/happy.jpg',
+        image: 'lowQualityImage/happy.jpg',
         text: "I'm Happy"
     },
     {
-        image: 'img/sad.jpg',
+        image: 'lowQualityImage/sad.jpg',
         text: "I'm Sad"
     },
     {
-        image: 'img/angry.jpg',
+        image: 'lowQualityImage/angry.jpg',
         text: "I'm Angry"
     },
     {
-        image: 'img/scared.jpg',
+        image: 'lowQualityImage/scared.jpg',
         text: "I'm Scared"
     },
     {
-        image: 'img/outside.jpg',
+        image: 'lowQualityImage/outside.jpg',
         text: "I want to go Outside"
     },
     {
-        image: 'img/home.jpg',
+        image: 'lowQualityImage/home.jpg',
         text: "I want to go Home"
     },
     {
-        image: 'img/school.jpg',
+        image: 'lowQualityImage/school.jpg',
         text: "I'm want to go to School"
     },
     {
-        image: 'img/grandmas.jpg',
+        image: 'lowQualityImage/grandmas.jpg',
         text: "I'm want to go to Grandmas"
     }
 ];
@@ -102,7 +102,7 @@ data.forEach((item)=> {
 
     box.addEventListener('click',()=>{
         box.classList.add('active');
-        setTimeout(()=>box.classList.remove('active'),1500);
+        setTimeout(()=>box.classList.remove('active'),1000);
         speakText(text);
     });
 
