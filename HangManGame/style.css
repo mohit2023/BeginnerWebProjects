@@ -13,24 +13,24 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 80vh;
+    height: 90vh;
 }
 
 h1 {
     margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: 70px;
 }
 
 .game-container {
     width: 450px;
     position: relative;
     margin: auto;
-    height: 350px;
+    height: 300px;
     padding: 20px;
 }
 
 svg {
-    height: 300px;
+    height: 340px;
     width: 250px;
     fill: transparent;
     stroke: white;
@@ -61,6 +61,7 @@ svg {
 
 .word {
     display: flex;
+    height: 50px;
 }
 
 .letter {
@@ -73,17 +74,17 @@ svg {
 
 .popup-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
     background-color: rgba(0,0,0,0.3);
     display: none;
-    align-items: center;
     justify-content: center;
 }
 
 .popup {
+    height: 30%;
     background-color: cornflowerblue;
     border-radius: 5px;
     display: flex;
@@ -119,10 +120,10 @@ svg {
 
 .notification-container {
     position: absolute;
-    bottom: -50px;
+    bottom: -40px;
     background-color: rgba(0,0,0,0.8);
     border-radius: 10px 10px 0 0;
-    padding: 15px 20px;
+    padding: 10px 20px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -131,5 +132,5 @@ svg {
 }
 
 .notification-container.show {
-    transform: translateY(-50px);
+    transform: translateY(-40px);
 }
