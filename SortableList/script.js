@@ -85,8 +85,6 @@ function checkOrder() {
     listItems.forEach((item,index) => {
         const name = item.querySelector('.name').innerText.trim();
 
-        console.log(name);
-
         if(name === richest[index]){
             item.classList.remove('wrong');
             item.classList.add('right');
