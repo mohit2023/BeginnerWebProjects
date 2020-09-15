@@ -32,7 +32,7 @@ function addInData(obj) {
 }
 
 async function getRandomUser(){
-    const response = await fetch('https://randomuser.me/api/');
+    const response = await fetch('https://cors-anywhere.herokuapp.com/https://randomuser.me/api/');
 
     const data = await response.json();
 
