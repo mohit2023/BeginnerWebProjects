@@ -9,7 +9,7 @@ let loading = false;
 let filterOn = false;
 
 async function getPosts(){
-    const response = await fetch(`http://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`);
     const data = await response.json();
     return data;
 }
