@@ -14,12 +14,41 @@ let time = 10;
 let score = 0;
 let difficulty;
 
-async function getRandomWord() {
-    const response = await fetch(`http://random-word-api.herokuapp.com/word?number=1`);
-    
-    const data = await response.json();
+function randomNumber(max,min) {
+    return Math.floor( Math.random()*(max-min+1) + min );
+}
 
-    randomWord = data[0];
+ function endpoint(){
+    let start = String.fromCharCode(97+randomNumber(0,26));
+    let end= String.fromCharCode(97+randomNumber(0,26));
+
+    let cnt= randomNumber(3,10);
+    let temp="";
+    var i;
+    for(i=0;i<cnt;i++){
+        temp+="?";
+    }
+
+    let final= start+temp+end;
+
+    return final;
+}
+
+async function fetchData(){
+    let key= endpoint();
+    
+    const response = await fetch(`https://api.datamuse.com/words?sp=${key}`);
+
+    const data = await response.json();
+    if(data.length==0){
+        return fetchData();
+    }
+    return data[0].word;
+}
+
+async function getRandomWord() {
+    randomWord= await fetchData();
+
     word.innerText = randomWord;
 }
 
